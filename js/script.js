@@ -84,3 +84,10 @@ document.addEventListener("mouseup", () => {
     isDragging = false;
     draggableDiv.style.cursor = "grab";
 });
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+        alert("Открытие панели разработчика запрещено.");
+    }
+});
