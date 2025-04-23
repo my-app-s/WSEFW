@@ -1,0 +1,75 @@
+body {
+    margin: 20px;
+    padding: auto;
+    background-color: rgb(216, 255, 245);
+}
+
+.main-div {
+    color: rgb(93, 56, 194);
+}
+
+.div-for-size {
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #27a861;
+    color: aliceblue;
+    cursor: grab;
+    width: 500px;
+    height: 100px;
+    top: 200px;
+    left: 100px;
+    position: absolute;
+    transition: width 0.5s ease, height 0.5s ease; /* Плавное изменение */
+    position: absolute;
+}
+
+/* Setting selection for div with class "div-for-size" */
+.div-for-size ::selection {
+    background-color: #07813e; /* Background color */
+    color: #00fff2; /* Text color */
+}
+
+.div-for-size-width {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    padding: 5px;
+}
+
+.div-for-size-height {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    padding: 5px;
+}
+
+.footer-info {
+    position: fixed; /* Фиксируем внизу */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    width: 100%;
+    text-align: center;
+    color: rgb(93, 56, 194);
+    padding: 10px;
+}
+
+#text-width {
+    width: 100px;
+    height: 20px;
+}
+
+#text-height {
+    width: 100px;
+    height: 20px;
+}
+
+#range-width {
+    width: 300px;
+}
+
+#range-height {
+    width: 300px;
+}

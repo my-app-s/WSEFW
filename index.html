@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>What size</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="main-div">
+            <h1>What size element for web</h1>
+            <p>Pleas enter size widht and height 10 to 1000px:</p>
+        </div>
+        <div>
+            <label>
+                W: <input id="range-width" type="range" min="10" max="1000" value="500">
+            </label>
+            <label>
+                H: <input id="range-height" type="range" min="10" max="1000" value="100">
+            </label>
+        </div>
+        <div><!-- By enter size-->
+            <input id="text-width" type="text">
+            <label>X</label>
+            <input id="text-height" type="text">
+            <button id="update-button">Select</button>
+        </div>
+        <div>
+            <!-- By download file for background -->
+            <input type="file" id="background-upload">
+        </div>
+        <div id="div-size" class="div-for-size">
+            <div class="div-for-size-width">Width: 500px</div>
+            <div class="div-for-size-height">Height: 100px</div>
+        </div>
+    </body>
+    <footer class="footer-info">Copyright 2025</footer>
+</html>
