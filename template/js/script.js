@@ -71,6 +71,9 @@ draggableDiv.addEventListener("mousedown", (event) => {
     offsetX = event.clientX - draggableDiv.getBoundingClientRect().left;
     offsetY = event.clientY - draggableDiv.getBoundingClientRect().top;
     draggableDiv.style.cursor = "grabbing";
+
+    // Убираем transition во время перетаскивания, чтобы не было задержек
+    draggableDiv.style.transition = "none";
 });
 
 document.addEventListener("mousemove", (event) => {
@@ -83,6 +86,9 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("mouseup", () => {
     isDragging = false;
     draggableDiv.style.cursor = "grab";
+
+    // Возвращаем transition после завершения перетаскивания
+    draggableDiv.style.transition = "top 0.2s ease, left 0.2s ease";
 });
 
 document.addEventListener("keydown", function (e) {
