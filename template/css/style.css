@@ -2,6 +2,10 @@ body {
     margin: 20px;
     padding: auto;
     background-color: rgb(216, 255, 245);
+    background-size: cover; /* Масштабирует изображение так, чтобы покрыть весь экран */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-position: center center; /* Центрирует изображение */
+    background-attachment: fixed; /* Закрепляет фон при прокрутке страницы */
 }
 
 .main-div {
