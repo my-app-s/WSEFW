@@ -25,6 +25,7 @@ body {
     position: absolute;
     transition: width 0.2s ease, height 0.2s ease; /* Плавное изменение */
     position: absolute;
+    z-index: -1;
 }
 
 /* Setting selection for div with class "div-for-size" */
