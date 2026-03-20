@@ -1,5 +1,3 @@
-# WSEFW
-
 I created this web app for myself because I needed to roughly determine the required size for a GIF image.
 This web app may not show exact dimensions!
 
